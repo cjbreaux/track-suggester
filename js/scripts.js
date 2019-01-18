@@ -8,7 +8,16 @@ $(document).ready(function() {
     var answer2 = parseInt($("input:radio[name=answer2]:checked").val());
     console.log(answer2);
 
-    var score = answer1 + answer2
+    var answer3 = parseInt($("input:radio[name=answer3]:checked").val());
+    console.log(answer2);
+
+    var answer4 = parseInt($("input:radio[name=answer4]:checked").val());
+    console.log(answer2);
+
+    var answer5 = parseInt($("input:radio[name=answer5]:checked").val());
+    console.log(answer2);
+
+    var score = answer1 + answer2 + answer3 + answer4 + answer5
 
     $(".results p, .greeting").addClass("hidden");
 
