@@ -1,7 +1,7 @@
 $(document).ready(function() {
-  $("button").click(function(){
-    $(".greeting").addClass("hidden");
-    $("form").removeClass("hidden");
+  $("button#quizBtn").click(function(){
+    $(".greeting").toggleClass("hidden");
+    $("form").toggleClass("hidden");
   });
 
   $("form#quiz").submit(function(event) {
