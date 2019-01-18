@@ -2,6 +2,11 @@ $(document).ready(function() {
   $("button#quizBtn").click(function(){
     $(".greeting").toggleClass("hidden");
     $("form").toggleClass("hidden");
+    // $("form").children().addClass("hidden");
+    // $("#question1").removeClass("hidden");
+    // try to get working later
+
+
   });
 
   $("form#quiz").submit(function(event) {
