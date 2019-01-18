@@ -21,18 +21,18 @@ $(document).ready(function() {
 
     $(".results p, .greeting").addClass("hidden");
 
-    if (score >= 2 && score <=3) {
-      alert("Your score is: " + score + "." + "Try track 1!");
+    if (score >= 5 && score <=7) {
+      alert("Your score is: " + score + "." + "Try track: Front End!");
       $("#ruby").removeClass("hidden");
     }
 
-    if (score > 3 && score <=4) {
-      alert("Your score is: " + score + "." + "Try track 2!");
+    if (score > 7 && score <=12) {
+      alert("Your score is: " + score + "." + "Try track: General!");
       $("#PHP").removeClass("hidden");
     }
 
-    if (score >= 5) {
-      alert("Your score is: " + score + "." + "Try track 3!");
+    if (score >= 13) {
+      alert("Your score is: " + score + "." + "Try track: Back End!");
       $("#Java").removeClass("hidden");
     }
 
