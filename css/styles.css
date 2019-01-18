@@ -11,3 +11,7 @@ if the class is hidden in this way, i have trouble displaying the children with 
 .results {
   font-size: 30px;
 }
+
+.button{
+  margin:0px auto; //it will center them
+}
