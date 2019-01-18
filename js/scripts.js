@@ -35,19 +35,19 @@ $(document).ready(function() {
     if (score){
       if (score >= 5 && score <=7) {
         alert("Your score is: " + score + "." + "Try track: Front End!");
-        $("#ruby").toggleClass("hidden");
+        $("#frontEnd").toggleClass("hidden");
         $("form").toggleClass("hidden");
       }
 
       if (score > 7 && score <=12) {
         alert("Your score is: " + score + "." + "Try track: General!");
-        $("#PHP").toggleClass("hidden");
+        $("#android").toggleClass("hidden");
         $("form").toggleClass("hidden");
       }
 
       if (score >= 13) {
         alert("Your score is: " + score + "." + "Try track: Back End!");
-        $("#Java").toggleClass("hidden");
+        $("#c-sharp").toggleClass("hidden");
         $("form").toggleClass("hidden");
       }
     } else {
