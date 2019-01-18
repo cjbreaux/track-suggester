@@ -10,7 +10,7 @@ $(document).ready(function() {
 
     var score = answer1 + answer2
 
-    $(".results p").addClass("hidden");
+    $(".results p, .greeting").addClass("hidden");
 
     if (score >= 2 && score <=3) {
       alert("Your score is: " + score + "." + "Try track 1!");
