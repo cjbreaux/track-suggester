@@ -7,3 +7,7 @@ if the class is hidden in this way, i have trouble displaying the children with 
 .hidden {
   display: none;
 }
+
+.results {
+  font-size: 30px;
+}
