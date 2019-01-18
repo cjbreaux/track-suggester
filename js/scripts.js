@@ -7,6 +7,7 @@ $(document).ready(function() {
 
     if (answer1 >= 1) {
       alert(answer1);
+      $(".results").show();
     }
 
   });
