@@ -1,4 +1,8 @@
 $(document).ready(function() {
+  $("button").click(function(){
+    $(".greeting").addClass("hidden");
+  });
+
   $("form#quiz").submit(function(event) {
     event.preventDefault();
 
