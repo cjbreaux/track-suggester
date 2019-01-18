@@ -30,17 +30,17 @@ $(document).ready(function() {
     if (score){
       if (score >= 5 && score <=7) {
         alert("Your score is: " + score + "." + "Try track: Front End!");
-        $("#ruby").removeClass("hidden");
+        $("#ruby").toggleClass("hidden");
       }
 
       if (score > 7 && score <=12) {
         alert("Your score is: " + score + "." + "Try track: General!");
-        $("#PHP").removeClass("hidden");
+        $("#PHP").toggleClass("hidden");
       }
 
       if (score >= 13) {
         alert("Your score is: " + score + "." + "Try track: Back End!");
-        $("#Java").removeClass("hidden");
+        $("#Java").toggleClass("hidden");
       }
     } else {
         alert("Please answer all questions before submitting.");
