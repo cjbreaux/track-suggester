@@ -1,3 +1,9 @@
-.results {
+/* .results {
+  display: none;
+}
+
+if the class is hidden in this way, i have trouble displaying the children with targeted ids */
+
+.hidden {
   display: none;
 }

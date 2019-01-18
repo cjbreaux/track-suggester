@@ -10,17 +10,21 @@ $(document).ready(function() {
 
     var score = answer1 + answer2
 
+    $(".results p").addClass("hidden");
+
     if (score >= 2 && score <=3) {
       alert("Your score is: " + score + "." + "Try track 1!");
-      // $(".results").show();
+      $("#ruby").removeClass("hidden");
     }
 
     if (score > 3 && score <=4) {
       alert("Your score is: " + score + "." + "Try track 2!");
+      $("#PHP").removeClass("hidden");
     }
 
     if (score >= 5) {
       alert("Your score is: " + score + "." + "Try track 3!");
+      $("#Java").removeClass("hidden");
     }
 
 
