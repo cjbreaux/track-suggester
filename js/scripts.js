@@ -36,16 +36,19 @@ $(document).ready(function() {
       if (score >= 5 && score <=7) {
         alert("Your score is: " + score + "." + "Try track: Front End!");
         $("#ruby").toggleClass("hidden");
+        $("form").toggleClass("hidden");
       }
 
       if (score > 7 && score <=12) {
         alert("Your score is: " + score + "." + "Try track: General!");
         $("#PHP").toggleClass("hidden");
+        $("form").toggleClass("hidden");
       }
 
       if (score >= 13) {
         alert("Your score is: " + score + "." + "Try track: Back End!");
         $("#Java").toggleClass("hidden");
+        $("form").toggleClass("hidden");
       }
     } else {
         alert("Please answer all questions before submitting.");
