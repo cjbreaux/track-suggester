@@ -5,8 +5,6 @@ $(document).ready(function() {
     // $("form").children().addClass("hidden");
     // $("#question1").removeClass("hidden");
     // try to get working later
-
-
   });
 
   $("form#quiz").submit(function(event) {
@@ -31,7 +29,7 @@ $(document).ready(function() {
 
     $(".results p, .greeting").addClass("hidden");
 
-    // this quiz is weighted more heavily towrds a generalist track
+    // this quiz is weighted more heavily towrds a android track
     if (score){
       if (score >= 5 && score <=7) {
         alert("Your score is: " + score + "." + "Try track: Front End!");

@@ -15,3 +15,7 @@ if the class is hidden in this way, i have trouble displaying the children with 
 .button{
   margin:0px auto; //it will center them
 }
+
+body {
+  background-image: url(../img/whiteBG.jpg);
+}
