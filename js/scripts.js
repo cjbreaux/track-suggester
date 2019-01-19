@@ -4,7 +4,7 @@ $(document).ready(function() {
     $("form").toggleClass("hidden");
     // $("form").children().addClass("hidden");
     // $("#question1").removeClass("hidden");
-    // try to get working later
+    // try to get working later (only show one question at a time)
   });
 
   $("form#quiz").submit(function(event) {
@@ -29,29 +29,24 @@ $(document).ready(function() {
 
     $(".results p, .greeting").addClass("hidden");
 
-    // this quiz is weighted more heavily towrds a android track
+    // this quiz is weighted more heavily towrds an android track
     if (score){
       if (score >= 5 && score <=7) {
-        alert("Your score is: " + score + "." + "Try track: Front End!");
         $("#frontEnd").toggleClass("hidden");
         $("form").toggleClass("hidden");
       }
 
       if (score > 7 && score <=12) {
-        alert("Your score is: " + score + "." + "Try track: General!");
         $("#android").toggleClass("hidden");
         $("form").toggleClass("hidden");
       }
 
       if (score >= 13) {
-        alert("Your score is: " + score + "." + "Try track: Back End!");
         $("#c-sharp").toggleClass("hidden");
         $("form").toggleClass("hidden");
       }
     } else {
         alert("Please answer all questions before submitting.");
-    }
-
-
+      }
   });
 });
