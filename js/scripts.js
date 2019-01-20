@@ -2,10 +2,32 @@ $(document).ready(function() {
   $("button#quizBtn").click(function(){
     $(".greeting").toggleClass("hidden");
     $("form").toggleClass("hidden");
-    // $("form").children().addClass("hidden");
-    // $("#question1").removeClass("hidden");
+    $("form").children().addClass("hidden");
+    $("#question1").removeClass("hidden");
     // try to get working later (only show one question at a time)
   });
+
+
+    $("button#btn1").click(function(){
+      $("#question1").addClass("hidden");
+      $("#question2").removeClass("hidden");
+  });
+
+    $("button#btn2").click(function() {
+      $("#question2").addClass("hidden");
+      $("#question3").removeClass("hidden");
+  });
+
+    $("button#btn3").click(function(){
+      $("#question3").addClass("hidden");
+      $("#question4").removeClass("hidden");
+  });
+
+    $("button#btn4").click(function(){
+      $("#question4").addClass("hidden");
+      $("#question5").removeClass("hidden");
+  });
+
 
   $("form#quiz").submit(function(event) {
     event.preventDefault();
@@ -46,7 +68,8 @@ $(document).ready(function() {
         $("form").toggleClass("hidden");
       }
     } else {
-        alert("Please answer all questions before submitting.");
+        alert("It looks like you didn't answer all the questions. Please answer ALL the questions before submitting.");
+        location.reload();
       }
   });
 });
